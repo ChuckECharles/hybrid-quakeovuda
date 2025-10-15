@@ -8,7 +8,16 @@
 - We provide an effective integration of specialist UDA and OV segmentation models and generalist VLMs, laying a foundation for reduced dependence on manually annotated real-world data through further tuning and refinement of the proposed strategies.
 
 ## Installation
-
+```
+git clone https://github.com/ChuckECharles/hybrid-quakeovuda.git
+cd hybrid-quakeovuda
+conda create -n hybridquakeovuda python=3.8.5
+conda activate hybridquakeovuda
+pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html
+pip install mmcv-full==1.3.7
+cd SED/open_clip/
+make install
+```
 
 
 ## Dataset Preparation
